@@ -1,5 +1,5 @@
 ---
-title: Printers in ReadTeam
+title: Printers in RedTeam
 published: true
 ---
 
