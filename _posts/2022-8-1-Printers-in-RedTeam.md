@@ -5,9 +5,9 @@ published: true
 
 Hi all! This is my first post in this blog, so do not judge strictly :)
 
-Today I want to tell you about my phishing attack experience through the printers as part of cyber trainings at my work. 
+Today I want to tell you about my phishing attack experience through the printers as part of RedTeaming. 
 
-At the very beginning of the cyber trainings, I started massive scan of the local network on popular ports (22, 23, etc.). When I realized that I would not find anything interesting here, I decided to look at the printers. After running scan on port 9100, I found a huge variety of devices. And then an interesting thought came to me. What if I send a phishing document to a large number of devices? This should work, my end goal was to get the workers credentials.
+At the very beginning of the RedTeaming, I started massive scan of the local network on popular ports (22, 23, etc.). When I realized that I would not find anything interesting here, I decided to look at the printers. After running scan on port 9100, I found a huge variety of devices. And then an interesting thought came to me. What if I send a phishing document to a large number of devices? This should work, my end goal was to get the workers credentials.
 
 Firstly, I tried sending plain text over TCP via netcat. 
 ![Sending raw text over TCP](../resources/printersinreadteam/text-netcat.png)
@@ -33,7 +33,7 @@ Saved this document as PostScript file and send it to printer via netcat
 AND IT ALSO WORKS!
 ![Sending PS file over TCP](../resources/printersinreadteam/pspaper.jpg)
 
-Since there were no PJL tags in the document, I suspect that the printer automatically determined the file format and printed it. However, it's not certain that other printers in the office can handle it, so I had to add the tags myself. But since the work was on a tight schedule, I did not have much time to figure it out and I found a ready-made script on the Internet. This script is called [Printer Exploitation Toolkit](https://github.com/RUB-NDS/PRET). It allows you to do many things besides printing, but at the time of the cyber trainings, I only needed one - this script automatically adds required PJL tags to the document before sending it.
+Since there were no PJL tags in the document, I suspect that the printer automatically determined the file format and printed it. However, it's not certain that other printers in the office can handle it, so I had to add the tags myself. But since the work was on a tight schedule, I did not have much time to figure it out and I found a ready-made script on the Internet. This script is called [Printer Exploitation Toolkit](https://github.com/RUB-NDS/PRET). It allows you to do many things besides printing, but at the time of the RedTeaming, I only needed one - this script automatically adds required PJL tags to the document before sending it.
 
 I created a list of IP addresses of devices with open port 9100 and wrote a small bash script to automatically send a file to each device from the list. 
 Here is the script:
