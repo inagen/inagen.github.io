@@ -1,9 +1,9 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: LolKekBlog
+description: "Inagen's little blog"
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "Timur Bairamukov"
+  email: "inagen57@gmail.com"
+  url: "https://inagen.github.io"
 
 baseurl: /
 
