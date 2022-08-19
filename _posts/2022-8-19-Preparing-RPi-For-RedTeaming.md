@@ -4,13 +4,13 @@ published: true
 ---
 # Preface
 
-The RaspberryPi is an indispensable tool in a RedTeamer's arsenal. This microcomputer allows you to have constant access to the company's internal network without the physical presence of a hacker. The small body allows this tool to be invisible. However, this tool needs to be properly configured for a successful cyber-exercise.
+The RaspberryPi is an indispensable tool in a RedTeamer's arsenal. This microcomputer allows you to have constant access to the company's internal network without the physical presence of a hacker. The small body allows this tool to be invisible. However, this tool needs to be properly configured for a successful RedTeaming.
 
 In this article, I will tell you what goals I set and how I set up my favorite tool to achieve these goals. It will be enough to run the script once on the device, and it will be completely ready for combat use.
 
 # Goals
 
-In order to successfully complete a RedTeaming, I will highlight the main qualities that a microcomputer configured by me should have:
+In order to successfully complete an engagement, I will highlight the main qualities that a microcomputer configured by me should have:
 
 * Stable remote access to the microcomputer.
 * Invisibility to the defense team.
@@ -132,7 +132,7 @@ A similar situation with hostname:
 > systemctl restart networking
 ```
 
-Отлично! Мы только что подготовили RaspberryPi к киберучениям. Поздравляю!
+Excellent! We've just got the RaspberryPi ready for a RedTeaming. Congratulations!
 
 
 I also created a script that automates all actions, link [here](https://gist.github.com/inagen/d6b8f17bd6ed12f367924c5aaaabd553). However, before running it, you must remove all connections except for the modem (I will fix it in future).
