@@ -40,12 +40,12 @@ The principle of this antenna is that the radio signal in the front parts (direc
 To assemble the antenna, we need to create a reflector, a dipole, and a director(s), each with a length approximately equal to the wavelength in half.
 Calculate the wavelength using the formula $\lambda = \frac{c}{\nu}$, where $c$ is the speed of light and $\nu$ is the frequency:
 
-$\lambda = \frac{c}{\nu} = \frac{{299792458}{\space}{m/s}}{593405000{\space}Hz} = 0.50520716542{\space}m \approx 50.5{\space}cm$ 
+$\lambda = \frac{c}{\nu} = \frac{{299792458}{\space}{m/s}}{593405000 \space Hz} = 0.50520716542 \space m \approx 50.5 \space cm$ 
 
 
 The reflector, dipole and director(s) should have a length of about $\frac{\lambda}{2}$. The reflector should be slightly longer than the dipole (about 5%), and the dipole should be slightly longer than the directors (also about 5%). The distance between reflector and dipole should be equal to $\frac{\lambda}{4}$. The distance between the directors and the distance between an active element and the director varies between $0.35\lambda$ to $0.4\lambda$. 
 
-This means that the reflector, dipole and director(s) should have a length of about $\frac{\lambda}{2} \approx 20.25{\space}cm$. The distance between reflector and dipole should be equal to $\frac{\lambda}{4} \approx 10{\space}cm$ and the distance between dipole and director should be equal to  $0.35\lambda \approx 7 \space cm$
+This means that the reflector, dipole and director(s) should have a length of about $\frac{\lambda}{2} \approx 20.25 \space cm$. The distance between reflector and dipole should be equal to $\frac{\lambda}{4} \approx 10 \space cm$ and the distance between dipole and director should be equal to  $0.35\lambda \approx 7 \space cm$
 
 
 ## Creating an antenna: the first version
@@ -109,11 +109,11 @@ I suppose that after eliminating the above reasons, the quality of the captured 
 
 However, I have one more idea, which, unfortunately, I have not yet implemented, and which, in my opinion, can greatly increase the quality of the captured image. 
 
-The captured image is a video signal, but with a lot of noise. Since the text is basically a static image, and the intercepted signal is a series of frames (many frames per second, in our example about 60), I assume that it is possible to increase the quality of the picture by combining several frames into one, for example, take average pixel color for three adjacent frames, or come up with something smarter... (maybe I will implement something similar in the future) 🤔
+The captured image is a video signal, but with a lot of noise. Since the text is basically a static image, and the intercepted signal is a series of frames (many frames per second, in our example about 60), I assume that it is possible to increase the quality of the picture by combining several frames into one, for example, take average pixel color for three adjacent frames, or come up with something smarter... (maybe I will implement something similar in the future)
 
-Also, I do not deny the possible use of machine learning technologies to increase image quality 🤔
+Also, I do not deny the possible use of machine learning technologies to increase image quality...
 
-I also think that with a similar attack, you can intercept the sound transmitted through the cable 🤔
+I also think that with a similar attack, you can intercept the sound transmitted through the cable...
 
 # Conclusion
 
